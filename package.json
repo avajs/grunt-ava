@@ -1,0 +1,44 @@
+{
+  "name": "grunt-ava",
+  "version": "0.0.0",
+  "description": "Run AVA tests",
+  "license": "MIT",
+  "repository": "sindresorhus/grunt-ava",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && grunt"
+  },
+  "files": [
+    "tasks"
+  ],
+  "keywords": [
+    "gruntplugin",
+    "ava",
+    "test",
+    "runner",
+    "concurrent",
+    "parallel",
+    "fast",
+    "tape",
+    "tap",
+    "mocha",
+    "qunit",
+    "jasmine"
+  ],
+  "dependencies": {
+    "ava": "^0.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-shell": "^1.1.1",
+    "xo": "*"
+  }
+}
