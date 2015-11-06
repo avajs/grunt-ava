@@ -1,7 +1,6 @@
 'use strict';
-var path = require('path');
 var childProcess = require('child_process');
-var BIN = path.join(__dirname, '..', 'node_modules', '.bin', 'ava');
+var BIN = require.resolve('ava/cli.js');
 
 module.exports = function (grunt) {
 	grunt.registerMultiTask('ava', 'Run AVA tests', function () {
