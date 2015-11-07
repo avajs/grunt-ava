@@ -1,7 +1,6 @@
-'use strict';
-var test = require('ava');
+import test from 'ava';
 
-test(function (t) {
+test('foo', t => {
 	t.pass();
 	t.end();
 });
