@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 
 		childProcess.execFile(BIN, args, function (err, stdout, stderr) {
 			if (err) {
-				grunt.warn(err);
+				grunt.warn(stderr);
 				cb();
 				return;
 			}
