@@ -7,7 +7,9 @@ module.exports = function (grunt) {
 		var cb = this.async();
 		var args = this.filesSrc.concat('--color');
 
-		childProcess.execFile(BIN, args, function (err, stdout, stderr) {
+		args.unshift(BIN);
+
+		childProcess.execFile('node', args, function (err, stdout, stderr) {
 			if (err) {
 				grunt.warn(stderr);
 				cb();
