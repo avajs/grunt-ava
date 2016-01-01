@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 				command: 'grunt ava',
 				options: {
 					callback: function (_, stdout, stderr, cb) {
-						cb(/1 test passed/.test(stdout));
+						cb(/1 passed/.test(stdout));
 					}
 				}
 			}
