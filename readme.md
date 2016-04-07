@@ -1,6 +1,6 @@
 # grunt-ava [![Build Status](https://travis-ci.org/sindresorhus/grunt-ava.svg?branch=master)](https://travis-ci.org/sindresorhus/grunt-ava)
 
-> Run [AVA](https://github.com/sindresorhus/ava) tests
+> Run [AVA](https://ava.li) tests
 
 Please consider if you really need grunt for this. Using a [npm run script](https://github.com/sindresorhus/ava#initialize) would be better.
 
