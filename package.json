@@ -40,5 +40,8 @@
     "grunt-cli": "^1.2.0",
     "grunt-shell": "^1.1.1",
     "xo": "*"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
   }
 }
