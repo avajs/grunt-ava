@@ -1,5 +1,6 @@
 'use strict';
 var childProcess = require('child_process');
+
 var BIN = require.resolve('ava/cli.js');
 
 module.exports = function (grunt) {

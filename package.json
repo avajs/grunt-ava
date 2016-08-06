@@ -33,7 +33,7 @@
     "jasmine"
   ],
   "dependencies": {
-    "ava": "^0.15.1"
+    "ava": "^0.16.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
