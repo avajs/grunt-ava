@@ -2,7 +2,16 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
 		ava: {
-			test: ['fixture.js']
+			test: ['fixture.js'],
+			test2: {
+				options: {
+					verbose: true,
+					nyc: true
+				},
+				files: {
+					src: ['fixture.js']
+				}
+			}
 		},
 		shell: {
 			ava: {
