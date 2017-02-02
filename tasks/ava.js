@@ -1,18 +1,18 @@
 'use strict';
-var childProcess = require('child_process');
-var dargs = require('dargs');
-var resolveCwd = require('resolve-cwd');
+const childProcess = require('child_process');
+const dargs = require('dargs');
+const resolveCwd = require('resolve-cwd');
 
-var BIN = require.resolve('ava/cli.js');
+const BIN = require.resolve('ava/cli.js');
 
-module.exports = function (grunt) {
+module.exports = grunt => {
 	grunt.registerMultiTask('ava', 'Run AVA tests', function () {
-		var cb = this.async();
-		var opts = this.options();
-		var args = [BIN].concat(this.filesSrc, '--color', dargs(opts, {excludes: ['nyc']}));
+		const cb = this.async();
+		const opts = this.options();
+		const args = [BIN].concat(this.filesSrc, '--color', dargs(opts, {excludes: ['nyc']}));
 
 		if (opts.nyc) {
-			var nycBin = resolveCwd('nyc/bin/nyc.js');
+			const nycBin = resolveCwd('nyc/bin/nyc.js');
 
 			if (nycBin) {
 				args.unshift(nycBin);
@@ -23,7 +23,7 @@ module.exports = function (grunt) {
 			}
 		}
 
-		childProcess.execFile(process.execPath, args, function (err, stdout, stderr) {
+		childProcess.execFile(process.execPath, args, (err, stdout, stderr) => {
 			if (err) {
 				grunt.warn(stderr || stdout || err);
 				cb();

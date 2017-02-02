@@ -2,7 +2,7 @@
 
 > Run [AVA](https://ava.li) tests
 
-Please consider if you really need grunt for this. Using a [npm run script](https://github.com/avajs/ava#initialize) would be better.
+Please consider if you really need Grunt for this. Using a [npm run script](https://github.com/avajs/ava#initialize) would be better.
 
 
 ## Install

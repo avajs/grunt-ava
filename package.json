@@ -10,7 +10,7 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && grunt"
@@ -33,16 +33,16 @@
     "jasmine"
   ],
   "dependencies": {
-    "ava": "^0.17.0",
-    "dargs": "^4.1.0",
+    "ava": "^0.18.0",
+    "dargs": "^5.1.0",
     "resolve-cwd": "^1.0.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
-    "grunt-shell": "^1.1.1",
-    "nyc": "^9.0.1",
-    "xo": "^0.16.0"
+    "grunt-shell": "^2.1.0",
+    "nyc": "^10.1.2",
+    "xo": "*"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"

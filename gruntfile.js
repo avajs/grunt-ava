@@ -1,5 +1,5 @@
 'use strict';
-module.exports = function (grunt) {
+module.exports = grunt => {
 	grunt.initConfig({
 		ava: {
 			test: ['fixture.js'],
@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 			ava: {
 				command: 'grunt ava',
 				options: {
-					callback: function (_, stdout, stderr, cb) {
+					callback(_, stdout, stderr, cb) {
 						cb(/1.*passed/.test(stdout));
 					}
 				}
