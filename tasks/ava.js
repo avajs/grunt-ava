@@ -4,6 +4,7 @@ const dargs = require('dargs');
 const resolveCwd = require('resolve-cwd');
 
 const BIN = require.resolve('ava/cli.js');
+const HUNDRED_MEGABYTES = 1000 * 1000 * 100;
 
 module.exports = grunt => {
 	grunt.registerMultiTask('ava', 'Run AVA tests', function () {
@@ -23,7 +24,9 @@ module.exports = grunt => {
 			}
 		}
 
-		childProcess.execFile(process.execPath, args, (err, stdout, stderr) => {
+		childProcess.execFile(process.execPath, args, {
+			maxBuffer: HUNDRED_MEGABYTES
+		}, (err, stdout, stderr) => {
 			if (err) {
 				grunt.warn(stderr || stdout || err);
 				cb();
