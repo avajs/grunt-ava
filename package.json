@@ -33,15 +33,15 @@
     "jasmine"
   ],
   "dependencies": {
-    "ava": "^0.19.1",
+    "ava": "^0.20.0",
     "dargs": "^5.1.0",
-    "resolve-cwd": "^1.0.0"
+    "resolve-cwd": "^2.0.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-shell": "^2.1.0",
-    "nyc": "^10.1.2",
+    "nyc": "^11.0.3",
     "xo": "*"
   },
   "peerDependencies": {
